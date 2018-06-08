@@ -1,0 +1,357 @@
+body {
+    margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+#logo {
+  margin-left: 132px;
+  margin-top: 59px;
+}
+
+header {
+  height: 660px;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.50)), color-stop(100%, rgba(0, 0, 0, 0.50))), no-repeat url("../integrity_replatforming.png") ;
+   background-size: cover;
+}
+
+header > div {
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  margin-top: 94 px;
+}
+
+header h1 {
+  font-size: 64px;
+  line-height: 68px;
+  color: #FFF;
+}
+
+header h2 {
+ font-size: 28px;
+  line-height: 36px;
+  color: #FFF;
+}
+
+form {
+  background: white;
+  height: 60px;
+  width: 89.5%;
+  border-radius: 3px;
+  margin-left: 5.5%;
+}
+
+form input {
+  font-size: 16px;  
+  line-height: 19px;
+  width: calc(100% - 163px);
+  float: left;
+  height: 54px;
+  padding-left: 5px;
+  padding-left: 16px;
+  border: none;
+}
+
+form button {
+  width: 140px;
+  height: 54px;
+  border-radius: 3px; 
+  background-color: #008080; 
+  float: left;
+  color: #FFFFFF;
+  font-size: 24px;  
+  font-weight: bold;  
+  line-height: 31px;
+  margin-top: 3px;
+  border: none;
+}
+
+header.scroll {
+
+}
+
+#intro {
+    background-color: #FAFAFC;
+    border-bottom: 20px solid #E7F3F3;
+    overflow: hidden;
+    padding: 40px 118px;
+  }
+
+  #intro p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  #intro p:nth-of-type(1) {
+    font-size: 48px;
+  }
+
+  #intro p > span {
+    color: #008080;
+    font-weight: bold;
+  }
+
+  #intro p:nth-of-type(2) {
+    font-size: 20px;
+    color: #797979;
+  }
+
+  #intro p:nth-of-type(3) {
+    font-size: 24px;
+    color: #4D505A;
+    margin-bottom: 0px;
+  }
+
+content {
+  overflow: hidden;
+}
+
+#intro {
+  height: 242px;
+
+}
+
+div.faqs {
+  border: 1px solid blue;
+}
+
+div.faq {
+
+}
+
+#faqs {
+    border-bottom: 20px solid #E7F3F3;
+  }
+
+  #faqs h3 {
+    text-align: center;
+    font-size: 36px;
+    color: #4D505A;
+    width: calc(100% - 236px);
+    margin: 0;
+    margin-left: 118px;
+    border-bottom: 4px solid #E7F3F3;
+    padding-bottom: 48px;
+    padding-top: 61px;
+  }
+
+  .faq {
+    width: calc(100% - 236px);
+    margin: 0;
+    margin-left: 118px;
+    border-bottom: 4px solid #e7f3f3;
+    min-height: 258px;
+    padding-bottom: 68px;
+  }
+
+  .faq ul  {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .faq ul li {
+    height: 100%;
+    border-left: 5px solid #008080;
+    padding: 14px 28px;
+  }
+
+  .faq:last-of-type {
+    border: none;
+  }
+
+
+  .faq > *  {
+    margin-left: 468px;
+    display: block;
+  }
+
+  .question {
+    font-size: 48px;
+    color: #008080;
+  }
+
+  .subtitle {
+    font-size: 36px;
+    color: #002323;
+  }
+
+  .text {
+    color: #797979;
+    font-size: 18px;
+  }
+
+  ul {
+    font-size: 18px;
+  }
+
+  .faq:nth-of-type(1) {
+    background: no-repeat url("../faq1.png") 144px 45px;    
+  }
+
+  .faq:nth-of-type(2) {
+    background: no-repeat url("../faq2.png") 144px 45px;     
+  }
+
+  .faq:nth-of-type(3) {
+    background: no-repeat url("../faq3.png") 144px 45px;     
+  }
+
+  .faq:nth-of-type(4) {
+    background: no-repeat url("../faq4.png") 144px 45px;     
+  }
+
+  #faqs .faq:nth-of-type(5) {
+    background: no-repeat url("../faq5.png") 144px 45px;     
+  }
+
+  #message {
+    height: 136px;
+    background-color: black;
+    color: white;
+    font-size: 44px;
+    text-align: center;
+    
+  }
+
+  #message p {
+    margin:0;
+    padding-top: 46px;
+  }
+
+
+  #message span {
+    font-weight: bold;
+  }
+
+  .faq span {
+    margin-bottom: 40px;
+  }
+
+  footer {
+    height: 242px;
+    background-color: #ebebeb;
+    overflow: hidden;
+  }
+
+  footer div {
+    float: left;
+  }
+
+  footer div > a  {
+    background: no-repeat url("../clarivate.png");     
+    margin-top: 48px;
+    margin-left: 132px;
+    color: transparent;
+    display: inline-block;
+    height: 40px;
+    width: 114px;
+  }
+
+  footer p {
+      margin-left: 132px;
+      margin-top: 30px;
+      font-size: 24px;
+  }
+
+  nav {
+    margin-top: 48px;
+    float: left;
+    width: calc(100% - 471px);
+  }
+
+  nav ul {
+    list-style: none;
+  }
+
+  nav ul li {
+    float: right;
+    margin-left: 40px;
+  }
+
+  nav a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    cursor: pointer;
+  }
+
+
+header.sticky {
+    height: 774px;
+    background: none;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+header.sticky {
+    height: 74px;
+    width: 100%;
+    background: none;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+  .sticky h1, .sticky h2 {
+    display: none;
+  }
+
+#sticky-title {
+  display:none;
+
+}
+
+.sticky #logo  {
+  margin-top: 24px;
+  float: left;
+}
+
+.sticky #sticky-title {
+  float: left;
+  margin-left: 20px;
+  display:block;
+  color: #FFF;
+  width: auto;
+  margin-top:24px;
+}
+
+.sticky #sticky-title +  div {
+  float: right;
+  margin-right: 132px;
+  margin-left:initial;
+}
+
+.sticky #form-container {
+  width: 400px;
+  height: 50px;
+  margin-left: initial;
+  
+  float: right;
+  margin-top: 7px;
+}
+
+.sticky form {
+  width: 100%;
+}
+
+.sticky input {
+  height: 42px;
+  font-size: 16px;
+  width: 70%;
+  margin-top: 6px;
+  border: none;
+}
+
+.sticky button {
+  width: 25%;
+  border: none;
+  font-size: 20px;
+}

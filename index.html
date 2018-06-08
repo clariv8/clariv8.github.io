@@ -1,49 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Clariv8 HTML Form To Google Sheets Demo</title>
-  <meta name="description" content="Store HTML form submissions in Google Sheets">
-  <link href="./favicon.png" rel="shortcut icon">
-
-  <link rel="stylesheet" href="main.css">
-  <script src="https://unpkg.com/prefixfree@1.0.0/prefixfree.min.js"></script>
-
-  <!--script src="https://wzrd.in/standalone/formdata-polyfill@latest"></script-->
-  <!--script src="https://wzrd.in/standalone/promise-polyfill@latest"></script-->
-  <!--script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script-->
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	 <script src="https://unpkg.com/prefixfree@1.0.0/prefixfree.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
 </head>
 <body>
 
-  <div class="form-container">
-    <form name="submit-to-google-sheet">
-      <input name="email" type="email" placeholder="Email" required>
-      <input name="firstName" type="text" placeholder="First Name">
-      <input name="lastName" type="text" placeholder="Last Name">
-      <input name="phone" type="text" placeholder="Phone Number">
-      <button type="submit">Subscribe</button>
-    </form>
+<header id="header">
+	<a href="https://clarivate.com/" alt="Clarivate Analytics" >
+		<img id="logo" src="logo.png" alt="Clarivate Analytics"/>
+	</a>
 
-    <div class="loading js-loading is-hidden">
-      <div class="loading-spinner">
-        <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
-      </div>
-    </div>
+<div id="sticky-title">Make Integrity the application that you want</div>
+	<div>
+	<h1>Make Integrity the application that you want</h1>
 
-    <p class="js-success-message is-hidden">Success!</p>
-    <p class="js-error-message is-hidden">Error!</p>
-  </div>
+	<h2>Be first to see improvements and new features on Integrity. Drive the user experience of the modern and enhanced application we are developing.</h2>
 
-  <a href="https://docs.google.com/spreadsheets/d/148lSeBnfAUMtezzBqF_fn7nIvJzPAjZgZBu_12tIapk/edit?usp=sharing" target="_blank">View the Google Sheet</a>
+	
+	<div id="form-container">
+		<form method="post"  name="submit-to-google-sheet">
+			<input type="" name="email" placeholder="Write your email address here." />
+			<button>Submit</button>
+			<!--<p class="js-success-message is-hidden">Success!</p>
+			<p class="js-error-message is-hidden">Error!</p>-->
+		</form>
+	</div>
+</div>
+</header>
+<content>
+	<div id="intro">
+		<p>Another <span>Beta</span> Product why should I care?</p>
+		<p>Would you rather sit by and wait for a new look and feel Integrity without your input? 
+Or, use your experience, needs and pain points to influence what the new application should do for you and how it should behave?</p>
+		<p>Being part of the panel ensures that we listen and address what is important to you and to your work.</p>
+	</div>
 
-  <script>
+	<div id="faqs">
+		<h3>Frequently Asked Questions</h3>
+
+		<div class= "faq">
+			<p class="question">How much time and effort will this require from me? </p>
+			<p class="subtitle">You get to decide.</p>
+			<p class="text">It is entirely up to you and your availability. When we contact you for feedback, you get to decide:</p>
+			<ul class="facts">
+				<li>How much time you can spare.</li>
+				<li>When it is best/suitable for you to engage with us. </li>
+				<li>What knowledge areas, features, ideas or type of research you want to influence.</li>
+				<li>You do not have to respond if you are not interested. </li>
+			</ul>
+		</div>
+
+		<div class= "faq">
+			<p class="question">What type of research will I be involved in? </p>
+			<p class="text">Depending on what we are working on, research activities may include:</p>
+			<ul class="facts">
+				<li>Usability Testing</li>
+				<li>Interviews</li>
+				<li>Surveys</li>
+				<li>Workshops</li>
+				<li>Show & Tell</li>
+			</ul>
+			<span>Most research activities take place remotely from the comfort of your own computer</span>
+		</div>
+
+		<div class= "faq">
+			<p class="question">What will you do with my feedback  and information? </p>
+			
+			<span>With your prior permission, we record all research sessions.<br /> However, all findings are for internal use only.</span>
+			<span>We will not disclose any personally or business information.</span>
+			<span>Furthermore, you have the right to ask us to remove all information related to you.</span>
+		</div>
+
+		<div class= "faq">
+			<p class="question">What if I no longer want to be  part of the panel? </p>
+			<span>You can always ask us to remove you from the User Research Panel. 
+All communications will also offer you an option to opt out.  </span>
+		</div>
+
+		<div class= "faq">
+			<p class="question">I have more questions or comments, how can I contact you?  </p>
+			<span>Do feel free to email the user experience team, customer care or support. </span>
+		</div>
+	</div>
+	<div id="message">
+		<p>Make <span>Integrity</span> the application you want</p>		
+		</div>
+	
+</content>
+
+<footer>
+	<div>
+		<a href="https://clarivate.com/">Clarivate Analytics</a>
+		<p>Accelerating Innovation</p>
+	</div>
+	<nav>
+		<ul>
+			<li><a href="" alt="" >© 2018 Clarivate</a></li>
+			<li><a href="" alt="" >Copyright notice</a></li>
+			<li><a href="" alt="" >Terms of use</a></li>
+			<li><a href="" alt="" >Privacy statement</a> </li>
+			<li><a href="" alt="" >Cookie policy</a></li>
+		</ul>
+	</nav>
+
+</footer>
+ <script>
+
+
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzAqNU6iOqJ-SS4vF-fP9-9jhPszSWm6Sboa2CFHr07eeF6Zn4/exec'
     const form = document.forms['submit-to-google-sheet']
-    const loading = document.querySelector('.js-loading')
+    //const loading = document.querySelector('.js-loading')
     const successMessage = document.querySelector('.js-success-message')
-    const errorMessage = document.querySelector('.js-error-message')
+   // const errorMessage = document.querySelector('.js-error-message')
     form.addEventListener('submit', e => {
       e.preventDefault()
       showLoadingIndicator()
@@ -53,22 +125,41 @@
     })
     function showLoadingIndicator () {
       form.classList.add('is-hidden')
-      loading.classList.remove('is-hidden')
+     // loading.classList.remove('is-hidden')
     }
     function showSuccessMessage (response) {
       console.log('Success!', response)
       setTimeout(() => {
         successMessage.classList.remove('is-hidden')
-        loading.classList.add('is-hidden')
+       // loading.classList.add('is-hidden')
       }, 500)
     }
     function showErrorMessage (error) {
       console.error('Error!', error.message)
-      setTimeout(() => {
+      /*setTimeout(() => {
         errorMessage.classList.remove('is-hidden')
-        loading.classList.add('is-hidden')
-      }, 500)
+        //loading.classList.add('is-hidden')
+      }, 500)*/
     }
+
+	window.onscroll = function() {stickyForm()};
+
+	// Get the navbar
+	var header = document.getElementsByTagName("header")[0];
+	var formContainer = document.getElementById("form-container");
+
+	// Get the offset position of the navbar
+	var sticky = formContainer.offsetTop;
+
+	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function stickyForm() {
+	  if (window.pageYOffset >= sticky) {
+	    header.classList.add("sticky");
+	  } else {
+	    header.classList.remove("sticky");
+	  }
+	} 
+
   </script>
 
 </body>
